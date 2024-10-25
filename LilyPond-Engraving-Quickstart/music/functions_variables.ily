@@ -38,7 +38,9 @@ removeText_Dynamics = #(define-music-function (music) (ly:music?)
           \markup {
           \concat {
               \normal-text \bold \italic "("
+              \hspace #0.35
               \dynamic #(ly:music-property dynamicMark 'text)
+              \hspace #0.35
               \normal-text \bold \italic ")"
           }
           }
