@@ -41,7 +41,7 @@
       \new Staff = "staff_piano_lower" \with {
         \magnifyStaff #15/17
         midiInstrument = "acoustic grand"
-      } { \clef bass << \removeWithTag #'part \global \removeWithTag #'part \compressMMRests { \notes_piano_lower } >> }
+      } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_piano_lower } >> }
     >>
   }
   
