@@ -27,3 +27,4 @@ In this file the comments and include files will guide you where you need to be 
 As I make more scores (that can be open to the public) with LEQ, I will append them in the list below:
 
 - [District 394](https://github.com/jasonthomasgabriel/District-394--LilyPond-Score-/)
+- [Ouverture Bella/Donna (Showcase LEQ)](https://github.com/jasonthomasgabriel/Sandbox/tree/main/LEQ-showcase-Ouverture-BellaDonna) - a purpose-built score to show off most available features withtin LEQ.

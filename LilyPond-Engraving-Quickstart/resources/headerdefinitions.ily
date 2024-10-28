@@ -167,13 +167,16 @@ cueheadermarkup = #(define-markup-command (cueheadermarkup layout props arg)
 % Not-first-page headers and all footers %
 \paper {
   oddHeaderMarkup = \markup {
-    \fill-line {
-      { \italic \unless \on-first-page-of-part \smaller \smaller \sans \fromproperty #'header:revision }
-      { \null }
-      \line {
-        \concat{ \unless \on-first-page-of-part \smaller \caps \fromproperty #'header:instrument \hspace #1 \smaller \bold \caps \unless \on-first-page-of-part \fromproperty #'header:title \hspace #1 }
-        \if \should-print-page-number \unless \on-first-page-of-part \fromproperty #'page:page-number-string
+    \column {
+      \fill-line {
+        { \italic \unless \on-first-page-of-part \smaller \smaller \sans \fromproperty #'header:revision }
+        { \null }
+        \line {
+          \concat{ \unless \on-first-page-of-part \smaller \caps \fromproperty #'header:instrument \hspace #1 \smaller \bold \caps \unless \on-first-page-of-part \fromproperty #'header:title \hspace #1 }
+          \if \should-print-page-number \unless \on-first-page-of-part \fromproperty #'page:page-number-string
+        }
       }
+      \vspace #1
     }
   }
 
@@ -187,6 +190,7 @@ cueheadermarkup = #(define-markup-command (cueheadermarkup layout props arg)
         {\null}
         \line { \unless \on-first-page-of-part \italic \smaller \smaller \sans \fromproperty #'header:revision }
       }
+      \vspace #1
     }
   }
 

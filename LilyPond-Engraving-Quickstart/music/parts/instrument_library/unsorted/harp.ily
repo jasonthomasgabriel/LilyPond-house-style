@@ -41,7 +41,7 @@
       \new Staff = "staff_harp_lower" \with {
         \magnifyStaff #15/17
         midiInstrument = "orchestral harp"
-      } { \clef bass << \removeWithTag #'part \global \removeWithTag #'part \compressMMRests { \notes_harp_lower } >> }
+      } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_harp_lower } >> }
     >>
   }
   
