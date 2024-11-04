@@ -13,7 +13,15 @@
   left-margin = 15\mm
   right-margin = 12\mm
 
-  %optional settings for two-sided print with bindings in the centre
+  % When tinkering with spacings, it may help to visualise them
+  % annotate-spacing = ##t
+
+  % optional settings to avoid filling the page horizontally and vertically when not appropriate.
+  % ragged-bottom = ##t
+  % ragged-last-bottom = ##f
+  % system-system-spacing.basic-distance = #25          %25 is just a guess
+
+  % optional settings for two-sided print with bindings in the centre
   % two-sided = ##t
   % top-margin = 15\mm
   % bottom-margin = 7\mm
