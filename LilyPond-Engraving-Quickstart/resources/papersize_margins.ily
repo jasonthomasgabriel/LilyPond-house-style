@@ -12,4 +12,12 @@
   bottom-margin = 7\mm
   left-margin = 15\mm
   right-margin = 12\mm
+
+  %optional settings for two-sided print with bindings in the centre
+  % two-sided = ##t
+  % top-margin = 15\mm
+  % bottom-margin = 7\mm
+  % inner-margin = 15\mm
+  % outer-margin = 12\mm
+  % binding-offset = 5\mm
 }
